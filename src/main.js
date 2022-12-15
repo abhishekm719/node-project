@@ -1,5 +1,5 @@
-import { sum } from "./mymath.js";
-import { mul } from "./mymath.js";
+import { sum, mul } from "./mymath.js";
+
 function main() {
   let output = sum(1, 3);
   console.log("Output", output);
