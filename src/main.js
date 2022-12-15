@@ -13,8 +13,10 @@ function main() {
   let connection = createConnection(connectionUri);
   connection.connect();
 
-  let sql = `INSERT INTO message (message, reply) VALUES ('Hello Html', 3)`;
-  connection.query(sql);
+  let sql = `SELECT * FROM message`;
+  connection.query(sql, (error, results) => {
+    console.log(results);
+  });
 
   connection.end();
 }
