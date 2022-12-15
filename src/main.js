@@ -9,10 +9,17 @@ function main() {
     password: "ab1hi9shek",
     database: "cdac",
   };
+
+  // preparting the connection with details
   let connection = createConnection(connectionUri);
 
+  // opening the connection
   connection.connect();
 
-  console.log("Connection Done !");
+  console.log("Connection DONE!");
+
+  // close the connection
   connection.end();
 }
+
+main();
