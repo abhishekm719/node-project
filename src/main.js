@@ -6,7 +6,7 @@ function main() {
   let connectionUri = {
     host: "localhost",
     user: "root",
-    password: "ab1hi9shek",
+    password: "root",
     database: "cdac",
   };
 
